@@ -22,7 +22,7 @@ public class AnnotationPointCut {
         System.out.println("====方法执行前====");
     }
 
-    //在环绕增强中，我们可以给定一个参数，代表我们要获取处理切入的店
+    //在环绕增强中，我们可以给定一个参数，代表我们要获取处理切入的点
     @Around("execution(* com.kuang.service.UserServiceImpl.*(..))")
     public void around(ProceedingJoinPoint jp) throws Throwable {
         System.out.println("环绕前");

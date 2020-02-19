@@ -1,6 +1,7 @@
 package com.kuang.pojo;
 
-import jdk.internal.jline.internal.Nullable;
+//import jdk.internal.jline.internal.Nullable;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class People {
@@ -11,7 +12,7 @@ public class People {
     private Cat cat;
     private String name;
 
-    public People(@Nullable String name){
+    public People(/*@Nullable*/ String name) {
         this.name = name;
     }
 
